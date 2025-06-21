@@ -19,6 +19,10 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use('/api/customers', customerRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Solar API is running');
+});
+
 // Health check
 app.get('/health', (req, res) => {
   res.json({ status: 'Server is running' });
