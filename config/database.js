@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const connectDB = async () => {
   try {
     // MongoDB Atlas connection string format
-    const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://dlocal:dipesh123@cluster0.5j7ylqw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+    const mongoURI ='mongodb+srv://dlocal:dipesh123@cluster0.5j7ylqw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
     
     const conn = await mongoose.connect(mongoURI, {
       useNewUrlParser: true,
